@@ -30,8 +30,8 @@ The **NFTopia Marketplace Service** is a Laravel-powered microservice handling a
 |---------------------|---------------------------------------------------------------------------|
 | Framework           | [Laravel 10](https://laravel.com/docs/10.x)                              |
 | API                 | Laravel Sanctum (Authentication)                                         |
-| Database           | MySQL 8 + [Eloquent ORM](https://laravel.com/docs/10.x/eloquent)         |
-| Search             | [Laravel Scout](https://laravel.com/docs/10.x/scout) + Algolia           |
+| Database           |  PostgreSQL 15 + [Eloquent ORM](https://laravel.com/docs/10.x/eloquent)        |
+| Search             | [Laravel Scout](https://laravel.com/docs/10.x/scout) + [PGroonga](https://pgroonga.github.io/) (for full-text search)         |
 | Events             | [Laravel Echo](https://laravel.com/docs/10.x/broadcasting) + WebSockets  |
 
 ---
@@ -40,7 +40,7 @@ The **NFTopia Marketplace Service** is a Laravel-powered microservice handling a
 
 ### Prerequisites  
 - PHP 8.2+  
-- MySQL 8.0+  
+- PostgreSQL 15+  
 - Composer 2.5+  
 - Redis (for caching/queues)  
 
